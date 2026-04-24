@@ -1148,6 +1148,21 @@ footer {
 }
 
 @media (max-width: 480px) {
+    .section {
+        padding: 80px 5% 30px;
+    }
+    
+    .contact-container {
+        padding: 20px;
+        gap: 30px;
+    }
+    
+    .cyber-form input,
+    .cyber-form select,
+    .cyber-form textarea {
+        font-size: 16px;
+    }
+
     .glitch-text {
         font-size: 2.2rem;
     }
