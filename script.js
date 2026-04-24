@@ -44,14 +44,9 @@ function initGlitchEffect() {
     const originalText = glitchText.getAttribute('data-text');
     const chars = '!<>-_\\\\/[]{}—=+*^?#________';
     
-    let isGlitching = false;
-
-    setInterval(() => {
-        if(isGlitching) return;
-        isGlitching = true;
-        
+    // Start initial glitch with slight delay
+    setTimeout(() => {
         let iterations = 0;
-        const maxIterations = 10;
         
         const interval = setInterval(() => {
             glitchText.innerText = originalText.split('').map((letter, index) => {
@@ -66,10 +61,9 @@ function initGlitchEffect() {
             if(iterations >= originalText.length) {
                 clearInterval(interval);
                 glitchText.innerText = originalText;
-                isGlitching = false;
             }
         }, 30);
-    }, 5000); // Trigger every 5 seconds
+    }, 500); // Trigger once after 500ms
 }
 
 // --- Dynamic Team Loading ---
