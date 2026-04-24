@@ -71,14 +71,14 @@ function initGlitchEffect() {
 function initTeamData() {
     // Array of 7-8 members for the community
     const teamMembers = [
-        { name: "Alpha", role: "Lead Architect", icon: "ri-user-star-line", skills: ["React", "Node.js", "AWS"] },
-        { name: "Beta", role: "UI/UX Engineer", icon: "ri-paint-brush-line", skills: ["Figma", "CSS3", "Three.js"] },
-        { name: "Gamma", role: "Backend Systems", icon: "ri-server-line", skills: ["Python", "Django", "PostgreSQL"] },
-        { name: "Delta", role: "AI Integration", icon: "ri-brain-line", skills: ["TensorFlow", "OpenAI", "Python"] },
-        { name: "Epsilon", role: "Frontend Dev", icon: "ri-code-s-slash-line", skills: ["HTML5", "JS", "Vue"] },
-        { name: "Zeta", role: "DevOps / Sec", icon: "ri-shield-keyhole-line", skills: ["Docker", "CyberSec", "Linux"] },
-        { name: "Eta", role: "Database Admin", icon: "ri-database-2-line", skills: ["MongoDB", "SQL", "Redis"] },
-        { name: "Theta", role: "QA Protocol", icon: "ri-bug-line", skills: ["Jest", "Selenium", "Testing"] }
+        { name: "Member 1", role: "Web Developer", icon: "ri-user-star-line", skills: ["React", "Node.js", "HTML/CSS"] },
+        { name: "Member 2", role: "UI/UX Designer", icon: "ri-paint-brush-line", skills: ["Figma", "CSS3", "Design"] },
+        { name: "Member 3", role: "Backend Developer", icon: "ri-server-line", skills: ["Python", "Django", "PostgreSQL"] },
+        { name: "Member 4", role: "AI Specialist", icon: "ri-brain-line", skills: ["TensorFlow", "OpenAI", "Python"] },
+        { name: "Member 5", role: "Frontend Dev", icon: "ri-code-s-slash-line", skills: ["HTML5", "JS", "Vue"] },
+        { name: "Member 6", role: "Security Ops", icon: "ri-shield-keyhole-line", skills: ["Docker", "CyberSec", "Linux"] },
+        { name: "Member 7", role: "Database Admin", icon: "ri-database-2-line", skills: ["MongoDB", "SQL", "Redis"] },
+        { name: "Member 8", role: "QA Engineer", icon: "ri-bug-line", skills: ["Jest", "Selenium", "Testing"] }
     ];
 
     const teamGrid = document.getElementById('team-grid');
@@ -155,9 +155,9 @@ function initChatbot() {
 
     // Pre-programmed bot responses
     const botBrain = {
-        "What is CodeFlow?": "CodeFlow is an elite community of 7-8 developers focused on creating scalable, zero-bug, robust IT solutions. We are evolving into a full-fledged startup.",
-        "View Projects": "Currently, we are running modules like the Nexus Bot Framework, CloudSync Data Pipeline, and this very Web Portfolio. Navigate to the 'Active Modules' section for details.",
-        "Talk to Human": "Initializing direct human uplink... Please use the WhatsApp button below to establish a secure connection with our core team."
+        "What is CodeFlow?": "CodeFlow is a community of 7-8 developers focused on creating modern web and IT solutions. We are evolving into a full-fledged startup.",
+        "View Projects": "Currently, we are working on our Community Website, a Future Mobile App, and Open Source Libraries. Navigate to the 'Our Projects' section for details.",
+        "Talk to Human": "Initializing direct chat... Please use the WhatsApp button below to speak directly with our team."
     };
 
     // Handle Quick Replies
