@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initTeamData();
     initContactForm();
     initChatbot();
+    initScrollAnimations();
 });
 
 // --- Navigation Logic ---
@@ -86,7 +87,7 @@ function initTeamData() {
         const skillsHTML = member.skills.map(skill => `<span>${skill}</span>`).join('');
         
         const memberHTML = `
-            <div class="team-member">
+            <div class="team-member animate-on-scroll">
                 <div class="member-avatar">
                     <i class="${member.icon}"></i>
                 </div>
@@ -195,4 +196,22 @@ function initChatbot() {
     function scrollToBottom() {
         chatBody.scrollTop = chatBody.scrollHeight;
     }
+}
+
+// --- Scroll Animations ---
+function initScrollAnimations() {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
+    });
+
+    document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+        observer.observe(el);
+    });
 }
